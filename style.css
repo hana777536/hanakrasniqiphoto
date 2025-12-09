@@ -1,0 +1,376 @@
+:root {
+  --primary: #38b6ff;
+  --secondary: #0d3752;
+  --third: #ffffff;
+  --fourth: #000000;
+}
+/* declartion of fonts */
+@font-face {
+  font-family: roboto bold;
+  src: url(./fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: roboto bolditalic;
+  src: url(./fonts/RobotoMono-BoldItalic.ttf);
+}
+@font-face {
+  font-family: roboto extralight;
+  src: url(./fonts/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+  font-family: robotoextralightitalic;
+  src: url(./fonts/RobotoMono-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: roboto italic;
+  src: url(./fonts/RobotoMono-Italic.ttf);
+}
+@font-face {
+  font-family: roboto light;
+  src: url(./fonts/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: roboto lightitalic;
+  src: url(./fonts/RobotoMono-LightItalic.ttf);
+}
+@font-face {
+  font-family: roboto medium;
+  src: url(./fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: roboto mediumitalic;
+  src: url(./fonts/RobotoMono-MediumItalic.ttf);
+}
+@font-face {
+  font-family: roboto regular;
+  src: url(./fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: roboto semibold;
+  src: url(./fonts/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: roboto semibolditalic;
+  src: url(./fonts/RobotoMono-SemiBoldItalic.ttf);
+}
+body {
+  margin: 0;
+  font-family: roboto bold;
+  background-color: #000000;
+}
+
+/* header style */
+header.hkHeader {
+  background-color: #000000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+}
+
+header.hkHeader .hkMainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.hkHeader .hkLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.hkHeader .hkLogo img {
+  height: 60px;
+  width: 160px;
+}
+
+header.hkHeader .hkMainNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header.hkHeader .hkMainNav ul li {
+  margin: 0 15px;
+}
+
+header.hkHeader .hkMainNav ul li a {
+  text-decoration: none;
+  font-family: roboto bold;
+  font-size: 13px;
+  color: #38b6ff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header.hkHeader .hkMainNav  a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of header style */
+
+/* start of styling the main section */
+.hkMainSection .hkMainDiv {
+  background: linear-gradient(135deg, #0d3752 0%, #1a5a7a 50%, #38b6ff 100%);
+  min-height: 100vh;
+  width: 100%;
+}
+.hkMainSection .hkMainDiv h1 {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hkMainSection .hkMainDiv p {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.hkMainSection .hkMainDiv a {
+  display: block;
+  width: 120px;
+  margin: 30px auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #8bdae7;
+  color: #0d3752;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.hkMainSection .hkMainDiv a:hover {
+  color: #ffffff;
+  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of styling the main section */
+
+/* start of styling the code bases section */
+.hkCodeBases .hkContainer .hkRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.hkCodeBases .hkContainer {
+  background-color: #000000;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hkCodeBases .hkContainer .hkRow .hkColTwo {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: justify;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne i {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+/* here I changed the colors of the icons */
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkReactIcon {
+  color: #61dafb;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkHtmlIcon {
+  color: #e34f26;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkCssIcon {
+  color: #264de4;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkJsIcon {
+  color: #f0db4f;
+}
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkSassIcon {
+  color: #cd6799;
+}
+
+/* class name bg learn style */
+.hkBgLearn {
+  background-color: #366582;
+  margin: 30px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
+  -webkit-box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
+  -moz-box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
+}
+
+.hkBgLearn .hkBgLearnDiv h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: roboto bold;
+}
+.hkBgLearn .hkBgLearnDiv p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: roboto medium;
+}
+.hkBgLearn .hkBgLearnDiv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8bdae7;
+  color: #0d3752;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.hkBgLearn .hkBgLearnDiv a:hover {
+  color: #ffffff;
+  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of styling the learn style */
+
+
+/* start of styling of cards */
+.hkCards .hkCardContainer .hkCardsRow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  gap: 80px;
+}
+
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne,
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
+  flex: 1;
+  padding: 10px;
+}
+/* hover effect for cards */
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* end of hover effect for cards */
+
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne {
+  background-color: #000000;
+  border-radius: 10px;
+  color:#ffffff;
+}
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne h5{
+    color:#ffffff;
+    font-family: roboto bold;
+}
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
+  background-color: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo h5{
+    color:#ffffff;
+    font-family: roboto bold;
+}
+/* styling of Icons */
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne i#hkHtmlIconCard {
+  color: #e34f26;
+  font-size: 50px;
+}
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo i#hkCssIconCard {
+  color: #264de4;
+  font-size: 50px;
+}
+
+/* giving hover efects to the button in the cards */
+
+.hkCards .hkCardContainer .hkCardsRow a {
+    text-decoration: none;
+   background-color:#8bdae7;
+   color:#000000;
+   font-family: roboto bold;
+}
+.hkCards .hkCardContainer .hkCardsRow a:hover {
+    color:#ffffff;
+}
+/* end of styling the cards */
+
+.hkContact {
+  background-color: #0d3752;
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+/* styling the fourth section */
+.hkContact .ConatctDiv h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: roboto bold;
+}
+.hkContact .ConatctDiv p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: roboto medium;
+}
+.hkContact .ConatctDiv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8bdae7;
+  color: #0d3752;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.hkContact .ConatctDiv a:hover {
+  color: #ffffff;
+  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of styling the fourth section */
+
+/* footer styling */
+.hkFooter{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.hkFooter p{
+    margin:0;
+    font-family: roboto medium;
+}
+ .hkFooter a{
+    color:#38b6ff;
+    text-decoration: none;
+ }
+.hkFooter a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+.hkFooter ul{
+    list-style: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.hkFooter ul li a{
+    font-family: roboto medium;
+    font-size: 13px;
+}
+.hkFooter ul li a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
