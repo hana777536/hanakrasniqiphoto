@@ -206,29 +206,15 @@ header.hkHeader .hkMainNav  a:hover {
   .hkAboutContent .hkAboutContainer .hkAboutRowTwo {
    flex-direction: column; 
   } 
-
-.hkDevelop .hkDevelopContainer .hkDevelopRow {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0;
+.hkDevelop img{
+display: none;
 }
-
-.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColOne img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo {
-    text-align: center;
-    width: 100%;
-    padding: 0 20px;
-}
+    
+    
 
 }
+
+
 /* making this responsive */
 
 /* style of developing section */
