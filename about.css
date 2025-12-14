@@ -186,7 +186,6 @@ header.hkHeader .hkMainNav  a:hover {
     background: #000000;
     width: 100%;
     padding: 20px;
-    postion: absolute;
     top: 70px;
     left: 0;
   }
@@ -203,16 +202,57 @@ header.hkHeader .hkMainNav  a:hover {
   .hkAboutContent .hkAboutContainer .hkAboutRowOne {
     flex-direction: column;
   }
-  .hkAboutContent img{
-   
-  }
+
   .hkAboutContent .hkAboutContainer .hkAboutRowTwo {
    flex-direction: column; 
-  }
-/* making header and first section responisive */
+  } 
+
+.hkDevelop .hkDevelopContainer .hkDevelopRow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
+.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColOne img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
 
+.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
 
+}
+/* making this responsive */
+
+/* style of developing section */
+
+.hkDevelop .hkDevelopContainer .hkDevelopColOne img {
+    width: 350px;
+    height: 400px;
+}
+.hkDevelop .hkDevelopContainer .hkDevelopRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    gap: 50px;
+}
+.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo h1 {
+    font-weight: bold;
+    text-align: justify;
+}
+.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo p {
+    display: flex;
+    text-align: center;
+    font-family: roboto regular;
+}
 
 
