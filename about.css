@@ -191,6 +191,41 @@ border-radius: 10px;
         font-weight: bold;
         text-align: center;
 }
+.hkFooter{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.hkFooter p{
+    margin:0;
+    font-family: roboto medium;
+}
+ .hkFooter a{
+    color:#38b6ff;
+    text-decoration: none;
+ }
+.hkFooter a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+.hkFooter ul{
+    list-style: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.hkFooter ul li a{
+    font-family: roboto medium;
+    font-size: 13px;
+}
+.hkFooter ul li a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+ 
 
 
 
@@ -243,6 +278,7 @@ border-radius: 10px;
   .hkDevelop .hkDevelopColTwo {
     text-align: center;
   }
+ 
 }
 
 
