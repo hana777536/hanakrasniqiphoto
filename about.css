@@ -163,6 +163,37 @@ header.hkHeader .hkMainNav  a:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+
+
+/* style of developing section */
+.hkDevelop .hkDevelopRow{
+display: flex;
+justify-content: space-around;
+gap: 10px;
+align-items: center;
+margin-top: 50px;
+ }
+.hkDevelop .hkDevelopRow .hkDevelopColOne img{
+width: 300px;
+height: 300px;
+flex-basis: 50%;
+border-radius: 10px;
+}
+.hkDevelop .hkDevelopRow .hkDevelopColTwo {
+    flex-basis: 50%;
+    text-align: justify;
+    font-family: roboto regular;
+    color: #0d3752;
+}
+.hkDevelop .hkDevelopRow .hkDevelopColTwo h1 {
+        font-family: roboto bold;
+        font-weight: bold;
+        text-align: center;
+}
+
+
+
 @media screen and (max-width: 768px) {
   body{
     overflow-x: hidden;
@@ -206,39 +237,14 @@ header.hkHeader .hkMainNav  a:hover {
   .hkAboutContent .hkAboutContainer .hkAboutRowTwo {
    flex-direction: column; 
   } 
-.hkDevelop img{
-display: none;
-}
-    
-    
-
-}
-
-
-/* making this responsive */
-
-/* style of developing section */
-
-.hkDevelop .hkDevelopContainer .hkDevelopColOne img {
-    width: 350px;
-    height: 400px;
-}
-.hkDevelop .hkDevelopContainer .hkDevelopRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    gap: 50px;
-}
-.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo h1 {
-    font-weight: bold;
-    text-align: justify;
-}
-.hkDevelop .hkDevelopContainer .hkDevelopRow .hkDevelopColTwo p {
-    display: flex;
+  .hkDevelop .hkDevelopRow{
+    flex-direction: column;
+  }
+  .hkDevelop .hkDevelopColTwo {
     text-align: center;
-    font-family: roboto regular;
+  }
 }
+
+
 
 
