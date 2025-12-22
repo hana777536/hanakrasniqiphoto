@@ -239,5 +239,18 @@ header.hkHeader .hkMainNav  a:hover {
     color: #ffffff;
     padding: 10px 0;
   } 
+  .hkSection{
+    width: 100%;
+
+  } 
+  .sectionMain .hkContainerSec .hkRowSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
 }
 
