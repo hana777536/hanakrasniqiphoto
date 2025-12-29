@@ -61,7 +61,7 @@ body {
 
 /* header style */
 header.hkHeader {
-  background-color: #000000;
+   background-color: #000000;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -69,47 +69,65 @@ header.hkHeader {
   -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   z-index: 1;
+
 }
 
 header.hkHeader .hkMainNav {
-  display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header.hkHeader .hkLogo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 header.hkHeader .hkLogo img {
-  height: 60px;
+    height: 60px;
   width: 160px;
 }
 
+header.hkHeader .hkLogo  {
+    font-family: outfit bold;
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
 header.hkHeader .hkMainNav ul {
-  list-style: none;
+    list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
 header.hkHeader .hkMainNav ul li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 header.hkHeader .hkMainNav ul li a {
-  text-decoration: none;
+    text-decoration: none;
   font-family: roboto bold;
   font-size: 13px;
   color: #38b6ff;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-header.hkHeader .hkMainNav  a:hover {
-  color: #ffffff;
+header.hkHeader .hkMainNav ul li a:hover {
+    color: #ffffff;
   text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+#menu-toggle {
+    display: none;
 }
 /* end of header style */
 

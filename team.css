@@ -136,7 +136,7 @@ header.hkHeader .hkMainNav  a:hover {
 
 .hkCeoImage {
     height: 350px;
-    width: 350px;
+    width: 250px;
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(56, 182, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,38 +203,65 @@ header.hkHeader .hkMainNav  a:hover {
 /* end of footer styling */
 
 /* responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-    width: fit-content;
-  }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
-  header.hkHeader .hkMainNav ul {
-    flex-direction: column;
-    background: #000000;
-    top: 70px;
-    left: 0;
-    width: 100%;
-  }
-  .hkNavList {
-    display: flex;
-    flex-direction: column;
-    background: #000000;
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-  }
-  .hkNavList li a {
-    color: #ffffff;
-    padding: 10px 0;
-  }
-}
+.burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 1100;
+        color: #ffffff;
+    }
+    .hkNavLinks {
+        display: none;
+        flex-direction: column;
+        background: #1f1f1f;
+        width: 100vw;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0 0 10px 0;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        transition: max-height 0.3s ease;
+    }
+    .hkNavLinks.active {
+        display: flex;
+        animation: dropdownFade 0.3s;
+    }
+    /* keyframes are used for dropdown animation in css */
+    @keyframes dropdownFade {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .hkNavLinks li {
+        margin: 0;
+        text-align: center;
+    }
+    .hkNavLinks li a {
+        color: #fff;
+        font-size: 18px;
+        padding: 14px 0;
+        display: block;
+        border-bottom: 1px solid #222;
+        text-decoration: none;
+    }
+    
+    .hkNavLinks li a:hover {
+        background: #222;
+    }
+    #menu-toggle {
+        display: none;
+
+    }
+    /* Hide desktop nav spacing */
+    header.hkHeader .hkMainNav ul {
+        margin: 0;
+        padding: 0;
+    }
+
 
 
 
