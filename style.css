@@ -68,6 +68,7 @@ header.hkHeader {
   box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  z-index: 1;
 }
 
 header.hkHeader .hkMainNav {

@@ -1,0 +1,297 @@
+:root {
+  --primary: #38b6ff;
+  --secondary: #0d3752;
+  --third: #ffffff;
+  --fourth: #000000;
+}
+/* declartion of fonts */
+@font-face {
+  font-family: roboto bold;
+  src: url(./fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: roboto bolditalic;
+  src: url(./fonts/RobotoMono-BoldItalic.ttf);
+}
+@font-face {
+  font-family: roboto extralight;
+  src: url(./fonts/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+  font-family: robotoextralightitalic;
+  src: url(./fonts/RobotoMono-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: roboto italic;
+  src: url(./fonts/RobotoMono-Italic.ttf);
+}
+@font-face {
+  font-family: roboto light;
+  src: url(./fonts/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: roboto lightitalic;
+  src: url(./fonts/RobotoMono-LightItalic.ttf);
+}
+@font-face {
+  font-family: roboto medium;
+  src: url(./fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: roboto mediumitalic;
+  src: url(./fonts/RobotoMono-MediumItalic.ttf);
+}
+@font-face {
+  font-family: roboto regular;
+  src: url(./fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: roboto semibold;
+  src: url(./fonts/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: roboto semibolditalic;
+  src: url(./fonts/RobotoMono-SemiBoldItalic.ttf);
+}
+body {
+  margin: 0;
+  font-family: roboto bold;
+  background-color: #000000;
+}
+
+/* header style */
+header.hkHeader {
+  background-color: #000000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  z-index: 1;
+}
+
+header.hkHeader .hkMainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.hkHeader .hkLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.hkHeader .hkLogo img {
+  height: 60px;
+  width: 160px;
+}
+
+header.hkHeader .hkMainNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header.hkHeader .hkMainNav ul li {
+  margin: 0 15px;
+}
+
+header.hkHeader .hkMainNav ul li a {
+  text-decoration: none;
+  font-family: roboto bold;
+  font-size: 13px;
+  color: #38b6ff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header.hkHeader .hkMainNav  a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of header style */
+
+/* main section style */
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hkMainSection {
+    padding: 50px;
+    background: linear-gradient(135deg, #233038, #133348);
+    
+    border-radius: 20px;
+    box-shadow: 0 12px 48px rgba(56, 182, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.hkMainSection:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 64px rgba(56, 182, 255, 0.3);
+    border-color: rgba(56, 182, 255, 0.5);
+}
+
+.hkMainSection h1 {
+    font-family: roboto bold;
+    color: var(--primary);
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    text-shadow: 0 0 15px rgba(56, 182, 255, 0.4);
+}
+
+.hkMainSection p {
+    font-family: roboto regular;
+    color: var(--third);
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* blog cards grid */
+.hkBlogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hkSecondSection,
+.thirdSection,
+.fourthSection {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(13, 55, 82, 0.7), rgba(5, 37, 57, 0.7));
+    color: var(--third);
+    border: 2px solid rgba(56, 182, 255, 0.3);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-family: roboto regular;
+}
+
+.hkSecondSection:hover,
+.thirdSection:hover,
+.fourthSection:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 12px 48px rgba(56, 182, 255, 0.4);
+}
+
+.hkSecondSection .blogImage img,
+.thirdSection .blogImage img,
+.fourthSection .blogImage img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: filter 0.4s ease;
+}
+
+.hkSecondSection:hover .blogImage img,
+.thirdSection:hover .blogImage img,
+.fourthSection:hover .blogImage img {
+    filter: brightness(1.15);
+}
+
+.hkSecondSection .blogDate a,
+.thirdSection .blogDate a,
+.fourthSection .blogDate a {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 14px;
+    background: rgba(56, 182, 255, 0.15);
+    transition: all 0.4s ease;
+}
+
+.hkSecondSection .blogDate a:hover,
+.thirdSection .blogDate a:hover,
+.fourthSection .blogDate a:hover {
+    color: var(--third);
+    background: rgba(56, 182, 255, 0.25);
+    box-shadow: 0 0 20px rgba(74, 203, 223, 0.6);
+}
+
+/* footer styling */
+.hkFooter{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.hkFooter p{
+    margin:0;
+    font-family: roboto medium;
+}
+ .hkFooter a{
+    color:#38b6ff;
+    text-decoration: none;
+ }
+.hkFooter a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+.hkFooter ul{
+    list-style: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.hkFooter ul li a{
+    font-family: roboto medium;
+    font-size: 13px;
+}
+.hkFooter ul li a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+/* end of footer styling */
+
+/* responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    width: fit-content;
+  }
+  header.hkHeader {
+    position: static !important;
+    top: auto !important;
+    width: 100%;
+  }
+  header.hkHeader .hkMainNav ul {
+    flex-direction: column;
+    background: #000000;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+  .hkNavList {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    width: 100%;
+    padding: 20px;
+    postion: absolute;
+    top: 70px;
+    left: 0;
+  }
+  .hkNavList li a {
+    color: #ffffff;
+    padding: 10px 0;
+  }
+ main {
+  flex-direction: column;
+}
+}
