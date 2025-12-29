@@ -1,0 +1,242 @@
+:root {
+  --primary: #38b6ff;
+  --secondary: #0d3752;
+  --third: #ffffff;
+  --fourth: #000000;
+}
+/* declartion of fonts */
+@font-face {
+  font-family: roboto bold;
+  src: url(./fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: roboto bolditalic;
+  src: url(./fonts/RobotoMono-BoldItalic.ttf);
+}
+@font-face {
+  font-family: roboto extralight;
+  src: url(./fonts/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+  font-family: robotoextralightitalic;
+  src: url(./fonts/RobotoMono-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: roboto italic;
+  src: url(./fonts/RobotoMono-Italic.ttf);
+}
+@font-face {
+  font-family: roboto light;
+  src: url(./fonts/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: roboto lightitalic;
+  src: url(./fonts/RobotoMono-LightItalic.ttf);
+}
+@font-face {
+  font-family: roboto medium;
+  src: url(./fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: roboto mediumitalic;
+  src: url(./fonts/RobotoMono-MediumItalic.ttf);
+}
+@font-face {
+  font-family: roboto regular;
+  src: url(./fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: roboto semibold;
+  src: url(./fonts/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: roboto semibolditalic;
+  src: url(./fonts/RobotoMono-SemiBoldItalic.ttf);
+}
+body {
+  margin: 0;
+  font-family: roboto bold;
+  background-color: #000000;
+}
+
+/* header style */
+header.hkHeader {
+  background-color: #000000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  z-index: 1;
+}
+
+header.hkHeader .hkMainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.hkHeader .hkLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.hkHeader .hkLogo img {
+  height: 60px;
+  width: 160px;
+}
+
+header.hkHeader .hkMainNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header.hkHeader .hkMainNav ul li {
+  margin: 0 15px;
+}
+
+header.hkHeader .hkMainNav ul li a {
+  text-decoration: none;
+  font-family: roboto bold;
+  font-size: 13px;
+  color: #38b6ff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header.hkHeader .hkMainNav  a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+}
+/* end of header style */
+
+/* CEO section style */
+.hkCeoContainer {
+    background-color: var(--secondary);
+    padding: 60px 20px;
+    
+}
+
+.hkCeoContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hkCeoImageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hkCeoImage {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(56, 182, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hkCeoImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(56, 182, 255, 0.6);
+}
+
+.hkCeoText {
+    flex: 1;
+}
+
+.hkCeoText h2 {
+    font-family: roboto bold;
+    font-size: 32px;
+    color: var(--primary);
+    margin: 0 0 20px 0;
+}
+
+.hkCeoText p {
+    font-family: roboto regular;
+    font-size: 16px;
+    color: var(--third);
+    line-height: 1.6;
+}
+/* footer styling */
+.hkFooter{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    
+}
+.hkFooter p{
+    margin:0;
+    font-family: roboto medium;
+}
+ .hkFooter a{
+    color:#38b6ff;
+    text-decoration: none;
+ }
+.hkFooter a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+.hkFooter ul{
+    list-style: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.hkFooter ul li a{
+    font-family: roboto medium;
+    font-size: 13px;
+}
+.hkFooter ul li a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+/* end of footer styling */
+
+/* responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    width: fit-content;
+  }
+  header.hkHeader {
+    position: static !important;
+    top: auto !important;
+    width: 100%;
+  }
+  header.hkHeader .hkMainNav ul {
+    flex-direction: column;
+    background: #000000;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+  .hkNavList {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+  .hkNavList li a {
+    color: #ffffff;
+    padding: 10px 0;
+  }
+}
+
+
+
+
+
