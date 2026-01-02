@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.emNavLinks');
+  const navLinks = document.querySelector('.hkNavLinks');
   const mobileQuery = window.matchMedia('(max-width: 768px)');
 
   function handleMenu() {
