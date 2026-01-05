@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('fgffghf');
+
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.querySelector('.hkNavLinks');
   const mobileQuery = window.matchMedia('(max-width: 768px)');
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function toggleNav() {
+    console.log('fgffghf');
+    
     if (menuToggle.checked) {
       navLinks.style.display = 'block';
     } else {
