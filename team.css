@@ -223,32 +223,7 @@ body {
     overflow-x: hidden;
     width: fit-content;
   }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
-  header.hkHeader .hkMainNav ul {
-    flex-direction: column;
-    background: #000000;
-    top: 70px;
-    left: 0;
-    width: 100%;
-  }
-  .hkNavList {
-    display: flex;
-    flex-direction: column;
-    background: #000000;
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-  }
-  .hkNavList li a {
-    color: #ffffff;
-    padding: 10px 0;
-  } 
+  
   .hkSection{
     width: 100%;
 
