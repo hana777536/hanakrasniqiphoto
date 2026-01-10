@@ -59,77 +59,73 @@ body {
   background-color: #000000;
 }
 
-/* header style */
-header.hkHeader {
-   background-color: #000000;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
+/* start of styling the header */
+
+.hkHeader {
+  background-color: #000000;
   box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
-  z-index: 1;
-
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }
 
-header.hkHeader .hkMainNav {
-    display: flex;
-  justify-content: space-between;
+
+.hkHeader .navbar {
+  display: flex;
   align-items: center;
 }
 
-header.hkHeader .hkLogo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-header.hkHeader .hkLogo img {
-    height: 60px;
-  width: 160px;
-}
-
-header.hkHeader .hkLogo  {
-    font-family: outfit bold;
-    font-size: 24px;
-    color: #fff;
-    margin: 0;
-}
-
-header.hkHeader .hkMainNav ul {
-    list-style: none;
+.hkHeader .navbar-brand {
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px; 
 }
 
-header.hkHeader .hkMainNav ul li {
-    margin: 0 15px;
+.hkHeader .navbar-brand img {
+  width: 160px;
+  height: 60px;
+}
+.navbar-toggler span.navbar-toggler-icon {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
-header.hkHeader .hkMainNav ul li a {
-    text-decoration: none;
+.hkHeader .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.hkHeader .navbar-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.hkHeader  .nav-item .nav-link {
+  font-size: smaller;
   font-family: roboto bold;
-  font-size: 13px;
-  color: #38b6ff;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  padding: 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  
+  
 }
 
-header.hkHeader .hkMainNav ul li a:hover {
+.hkHeader .nav-item .nav-link:hover {
     color: #ffffff;
-  text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+  text-shadow: 0 0 30px #80aab0, 0 0 30px #80aab0;
 }
-.burger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #38b6ff;
 }
-
-
-#menu-toggle {
-    display: none;
-}
-/* end of header style */
+/* end oof header styling */
 
 /* testimonials section */
 .testimonials {
