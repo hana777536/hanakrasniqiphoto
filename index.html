@@ -14,31 +14,54 @@
   </head>
   <body id="HK">
     <!--This is a Header-->
-     <header class="hkHeader">
-      <nav class="hkMainNav">
-        <div class="hkLogo">
-          <a href="./index.html">
-            <img src="./images/logo.jpeg" alt="logo" />
-          </a>
-        </div>
+  <!-- Header from bootstrap -->
+    <header class="hkHeader">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo.jpeg" alt="logo" width="160" height="60" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hkNavbar" aria-controls="hkNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- burger menu -->
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="burger">&#9776;</label>
-
-        <ul class="hkNavLinks">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="./testimonials.html">Testimonials</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./terms.html">Terms & Policies</a></li>
-        </ul>
-      </nav>
+                <div class="collapse navbar-collapse" id="hkNavbar">
+                    <!-- ms-3 adds a gap between the logo and the links; remove me-auto so links remain left-aligned -->
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./terms.html">Terms & Policies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- end of header -->
     <secetion class="hkMainSection">
@@ -179,6 +202,7 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
   </body>
   <script
