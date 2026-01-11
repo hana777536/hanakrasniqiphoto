@@ -370,7 +370,41 @@ body {
   box-shadow: 0 0 50px rgba(56, 182, 255, 0.8);
   transform: scale(1.05);
 }
-
+/* footer styling */
+.hkFooter{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.hkFooter p{
+    margin:0;
+    font-family: roboto medium;
+}
+ .hkFooter a{
+    color:#38b6ff;
+    text-decoration: none;
+ }
+.hkFooter a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
+.hkFooter ul{
+    list-style: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.hkFooter ul li a{
+    font-family: roboto medium;
+    font-size: 13px;
+}
+.hkFooter ul li a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+ }
 /* Responsive Design for 768px and below */
 @media (max-width: 768px) {
   .hkPractice .hkContainer {
@@ -419,41 +453,23 @@ body {
   .hkCalendar video {
     width: 100%;
   }
+  .hkFooter ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hkFooter ul li a {
+    font-size: 12px;
+  }
+
+  .hkMainAbout h1 {
+    font-size: 36px;
+  }
+
+  .hkMainAbout h2 {
+    font-size: 16px;
+  }
 }
 
-/* footer styling */
-.hkFooter{
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-.hkFooter p{
-    margin:0;
-    font-family: roboto medium;
-}
- .hkFooter a{
-    color:#38b6ff;
-    text-decoration: none;
- }
-.hkFooter a:hover{
-    color:#ffffff;
-    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
- }
-.hkFooter ul{
-    list-style: none;
-    padding:0;
-    margin:10px 0 0 0;
-    display:flex;
-    justify-content: center;
-    gap:15px;
-}
-.hkFooter ul li a{
-    font-family: roboto medium;
-    font-size: 13px;
-}
-.hkFooter ul li a:hover{
-    color:#ffffff;
-    text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
- }
+
 
