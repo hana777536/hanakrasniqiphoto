@@ -127,60 +127,103 @@ body {
 }
 /* end oof header styling */
 
-.hkSection{
-    width: 100%;
-    height: 100vh;
-    background-image: url('images/digiTeaching.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    box-shadow: 0px 0px 0px 400px rgba(0,0,0,0.61) inset;
--webkit-box-shadow: 0px 0px 0px 400px rgba(0,0,0,0.61) inset;
--moz-box-shadow: 0px 0px 0px 400px rgba(0,0,0,0.61) inset;
- display: flex;
-    justify-content: center;
-    align-items: center;
+.hkSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/digiTeaching.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  box-shadow: 0px 0px 0px 400px rgba(0, 0, 0, 0.61) inset;
+  -webkit-box-shadow: 0px 0px 0px 400px rgba(0, 0, 0, 0.61) inset;
+  -moz-box-shadow: 0px 0px 0px 400px rgba(0, 0, 0, 0.61) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
-.hkSection .hkAll h1{
-    font-size: 70px;
-    color: #1489a7;
-    text-shadow: 0.75px 0.75px #ffffff;
-}
-.sectionMain .hkContainerSec .hkRowSec{
-    display: flex;
-    color: #0d3752; 
-    margin-top: 20px;
-    justify-content: space-evenly;
-    
-}
-.sectionMain .hkContainerSec .hkRowSec .firstSec {
-    background-color: #1489a7;
-    margin: 10px 20px;
-    padding-top: 10px;
-    border-radius: 10px;
-}
-.sectionMain .hkContainerSec .hkRowSec .secondSec {
-    background-color: #1489a7;
-    margin: 10px 20px;
-    padding-top: 33px;
-    border-radius: 10px;
 
+.hkSection .hkAll h1 {
+  font-size: 70px;
+  color: #38b6ff;
+  text-shadow: 0 0 20px #38b6ff, 0 0 40px #1489a7, 0.75px 0.75px #ffffff;
+  animation: glow 2s ease-in-out infinite;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 20px #38b6ff, 0 0 40px #1489a7;
+  }
+  50% {
+    text-shadow: 0 0 30px #38b6ff, 0 0 60px #1489a7, 0 0 80px #0d3752;
+  }
+}
+
+.sectionMain .hkContainerSec .hkRowSec {
+  display: flex;
+  color: #0d3752;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.sectionMain .hkContainerSec .hkRowSec .firstSec,
+.sectionMain .hkContainerSec .hkRowSec .secondSec {
+  background: linear-gradient(135deg, #1489a7 0%, #38b6ff 100%);
+  margin: 10px 20px;
+  padding: 40px 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(56, 182, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sectionMain .hkContainerSec .hkRowSec .firstSec:hover,
+.sectionMain .hkContainerSec .hkRowSec .secondSec:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(56, 182, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
 .sectionMain .hkContainerSec .hkRowSec a {
-    display: block;
+  display: block;
   width: 120px;
   margin: 30px auto;
-  padding: 10px 0;
+  padding: 12px 0;
   text-align: center;
-  background-color: #8bdae7;
+  background: linear-gradient(135deg, #8bdae7 0%, #4acbdf 100%);
   color: #0d3752;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 203, 223, 0.4);
+  position: relative;
+  overflow: hidden;
 }
+
+.sectionMain .hkContainerSec .hkRowSec a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: left 0.3s ease;
+}
+
 .sectionMain .hkContainerSec .hkRowSec a:hover {
-    color: #ffffff;
-  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+  color: #ffffff;
+  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf, 0 0 50px #38b6ff;
+  transform: scale(1.05);
+}
+
+.sectionMain .hkContainerSec .hkRowSec a:hover::before {
+  left: 100%;
 }
 
 /* footer styling */

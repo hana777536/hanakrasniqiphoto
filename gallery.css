@@ -127,31 +127,97 @@ body {
 }
 /* end oof header styling */
 
-.hkGallery .container {
-  text-align: center;
-  font-family: roboto bold;
-  color: var(--secondary);
-  background-color: var(--fourth);
+/* Gallery styling */
+.hkGallery {
+  padding: 60px 20px;
+  background-color: #000000;
+}
 
-  
-}
 .hkPhotos {
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
 }
-.carousel-inner {
-  height: 550px;
+
+.gallery-title {
+  font-family: roboto bold;
+  font-size: 48px;
+  color: #38b6ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(56, 182, 255, 0.5);
+}
+
+.gallery-subtitle {
+  font-family: roboto light;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+#carouselExample {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(56, 182, 255, 0.3);
+}
+
+.carousel-item img {
+  height: 500px;
   object-fit: cover;
 }
-#HK{
-  background-color: var(--secondary);
+
+.hkGalleryGrid {
+  padding: 40px 0;
 }
-.hkPara  {
-  color: #ffffff;
-  
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 300px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(56, 182, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(56, 182, 255, 0.5);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(13, 55, 82, 0.8), rgba(56, 182, 255, 0.3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h3 {
   font-family: roboto bold;
-  text-align: center;
-  padding: 10px;
+  font-size: 24px;
+  color: #38b6ff;
+  text-shadow: 0 0 15px #38b6ff;
 }
 
 /* footer styling */

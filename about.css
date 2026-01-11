@@ -405,7 +405,7 @@ body {
     color:#ffffff;
     text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
  }
-/* Responsive Design for 768px and below */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hkPractice .hkContainer {
     display: flex;
