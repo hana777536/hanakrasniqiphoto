@@ -63,9 +63,9 @@ body {
 
 .hkHeader {
   background-color: #000000;
-  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  /* box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
-  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44); */
   position: sticky;
   z-index: 1000;
   top: 0;
@@ -126,86 +126,251 @@ body {
   color: #38b6ff;
 }
 /* end oof header styling */
+/* start of styling the main about section */
 
-/* about section style */
-.hkAboutSection {
-  padding: 100px 100px;
-  color: #0d3752;
+.hkMainAbout {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d3752 50%, #1a1a1a 100%);
+  padding: 80px 0;
+}
+
+.hkMainAbout .hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkMainAbout .hkMainText {
+  text-align: left;
+}
+
+.hkMainAbout h2 {
+  color: #38b6ff;
+  font-size: 18px;
+  margin: 0 0 20px 0;
   font-family: roboto regular;
+}
+
+.hkMainAbout h1 {
+  color: #ffffff;
+  font-size: 56px;
+  margin: 0;
+  font-family: roboto bold;
+  line-height: 1.2;
+}
+
+/* end of main about section styling */
+
+/* tyle of the practice section */
+.hkPractice {
+  background-color: #000000;
+  padding: 80px 0;
+}
+
+.hkPractice .hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.hkPractice .hkVisionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(13, 55, 82, 0.3) 0%, rgba(56, 182, 255, 0.1) 100%);
+  border: 1px solid rgba(56, 182, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hkPractice .hkVisionItem:hover {
+  transform: translateY(-10px);
+  border-color: #38b6ff;
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.3);
+}
+
+.hkPractice .hkIconBox {
+  font-size: 48px;
+  color: #38b6ff;
+  margin-bottom: 20px;
+}
+
+.hkPractice .hkContent h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: roboto bold;
+  margin: 0 0 15px 0;
+}
+
+.hkPractice .hkContent p {
+  color: #b0b0b0;
+  font-family: roboto regular;
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
 }
-.hkAboutSection h1 {
-    text-align: center;
-}
-/* styling about section and photos */
-.hkAboutContent .hkAboutContainer .hkAboutRowOne {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
-    
-}
-.hkAboutContent .hkAboutContainer .hkAboutRowOne img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-}
-.hkAboutContent .hkAboutContainer .hkAboutRowTwo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
-   
-}
-.hkAboutContent .hkAboutContainer .hkAboutRowTwo img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-}
-.hkAboutContent .hkAboutContainer .hkAboutRowOne .aboutColOne:hover,
-.hkAboutContent .hkAboutContainer .hkAboutRowOne .aboutColTwo:hover,
-.hkAboutContent .hkAboutContainer .hkAboutRowOne .aboutColThree:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-.hkAboutContent .hkAboutContainer .hkAboutRowTwo .aboutColFour:hover,
-.hkAboutContent .hkAboutContainer .hkAboutRowTwo .aboutColFive:hover,
-.hkAboutContent .hkAboutContainer .hkAboutRowTwo .aboutColSix:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+
+/* practice section styling */
+.hkLearnByDoing {
+  background: #000000;
+  padding: 80px 0;
+  color: #ffffff;
 }
 
+.hkLearnByDoing .hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.hkLearnByDoing .hkLearnContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-/* style of developing section */
-.hkDevelop .hkDevelopRow{
-display: flex;
-justify-content: space-around;
-gap: 10px;
-align-items: center;
-margin-top: 50px;
- }
-.hkDevelop .hkDevelopRow .hkDevelopColOne img{
-width: 300px;
-height: 300px;
-flex-basis: 50%;
-border-radius: 10px;
+.hkLearnByDoing .hkLearnText {
+  flex: 1;
+  padding-right: 20px;
 }
-.hkDevelop .hkDevelopRow .hkDevelopColTwo {
-    flex-basis: 50%;
-    text-align: justify;
-    font-family: roboto regular;
-    color: #0d3752;
+
+.hkLearnByDoing h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: roboto bold;
+  text-shadow: 0 0 10px rgba(56, 182, 255, 0.7);
 }
-.hkDevelop .hkDevelopRow .hkDevelopColTwo h1 {
-        font-family: roboto bold;
-        font-weight: bold;
-        text-align: center;
+
+.hkLearnByDoing p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b0b0b0;
 }
+
+.hkLearnByDoing .hkLearnDemo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hkLearnByDoing video {
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.5);
+}
+/* Ai Robot Section */
+.hkRobot {
+  background: #000000;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.hkRobot .hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkRobot .hkLearnContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hkRobot .hkLearnDemo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hkRobot video {
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hkRobot video:hover {
+  box-shadow: 0 0 50px rgba(56, 182, 255, 0.8);
+  transform: scale(1.05);
+}
+
+.hkRobot .hkLearnText {
+  flex: 1;
+}
+
+.hkRobot h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: roboto bold;
+  text-shadow: 0 0 10px rgba(56, 182, 255, 0.7);
+}
+
+.hkRobot p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+/* calendar section styling */
+.hkCalendar {
+  background: #000000;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.hkCalendar .hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkCalendar .hkLearnContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hkCalendar .hkLearnText {
+  flex: 1;
+}
+
+.hkCalendar h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: roboto bold;
+  text-shadow: 0 0 10px rgba(56, 182, 255, 0.7);
+}
+
+.hkCalendar p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+.hkCalendar .hkLearnDemo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hkCalendar video {
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hkCalendar video:hover {
+  box-shadow: 0 0 50px rgba(56, 182, 255, 0.8);
+  transform: scale(1.05);
+}
+/* footer styling */
 .hkFooter{
     background-color: #000000;
     color: #ffffff;
@@ -240,61 +405,11 @@ border-radius: 10px;
     color:#ffffff;
     text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
  }
- 
-
-
-
-@media screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-    width: fit-content;
-  }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
-  header.hkHeader .hkMainNav ul {
-    flex-direction: column;
-    background: #000000;
-    top: 70px;
-    left: 0;
-    width: 100%;
-  }
-  .hkNavList {
-    display: flex;
-    flex-direction: column;
-    background: #000000;
-    width: 100%;
-    padding: 20px;
-    top: 70px;
-    left: 0;
-  }
-  .hkNavList li a {
-    color: #ffffff;
-    padding: 10px 0;
-  }
-  .hkAboutSection  {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-  }
-  .hkAboutContent .hkAboutContainer .hkAboutRowOne {
-    flex-direction: column;
-  }
-
-  .hkAboutContent .hkAboutContainer .hkAboutRowTwo {
-   flex-direction: column; 
-  } 
-  .hkDevelop .hkDevelopRow{
-    flex-direction: column;
-  }
-  .hkDevelop .hkDevelopColTwo {
-    text-align: center;
-  }
+@media (max-width: 768px) {
+    .card {
+        display: block; /* Stack cards vertically */
+        width: 100%; /* Full width for each card */
+        margin-bottom: 20px; /* Space between cards */
+    }
 }
-
-
-
 

@@ -53,42 +53,39 @@
   font-family: roboto semibolditalic;
   src: url(./fonts/RobotoMono-SemiBoldItalic.ttf);
 }
+
 body {
   margin: 0;
   font-family: roboto bold;
-  background-color: #000000;
 }
-
-/* start of styling the header */
 
 .hkHeader {
   background-color: #000000;
-  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
-  -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
-  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  box-shadow: 24px 19px 20px 6px rgba(56, 182, 255, 0.3);
+  -webkit-box-shadow: 24px 19px 20px 6px rgba(56, 182, 255, 0.3);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(56, 182, 255, 0.3);
   position: sticky;
   z-index: 1000;
   top: 0;
 }
-
 
 .hkHeader .navbar {
   display: flex;
   align-items: center;
 }
 
-
 .hkHeader .navbar-brand {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .hkHeader .navbar-brand img {
   width: 160px;
   height: 60px;
 }
+
 .navbar-toggler span.navbar-toggler-icon {
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.15);
@@ -100,262 +97,337 @@ body {
   align-items: center;
 }
 
-
 .hkHeader .navbar-nav {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-
-.hkHeader  .nav-item .nav-link {
+.hkHeader .nav-item .nav-link {
   font-size: smaller;
   font-family: roboto bold;
   padding: 6px 8px;
-  display: flex;
-  justify-content: space-between;
-  
-  
+  color: #38b6ff;
+  transition: all 0.3s ease;
 }
 
 .hkHeader .nav-item .nav-link:hover {
-    color: #ffffff;
-  text-shadow: 0 0 30px #80aab0, 0 0 30px #80aab0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(56, 182, 255, 0.6);
 }
-.navbar-expand-lg .navbar-nav .nav-link {
+
+.hkMainSection {
+  background: linear-gradient(135deg, #0d3752 0%, #1a5a7a 100%);
+  padding: 120px 30px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hkMainDiv {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hkMainDiv h1 {
+  font-size: 56px;
+  margin-bottom: 25px;
+  font-family: roboto bold;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.hkMainDiv h1 em {
   color: #38b6ff;
-}
-/* end oof header styling */
-
-
-
-/* start of styling the main section */
-.hkMainSection .hkMainDiv {
-  background: linear-gradient(135deg, #0d3752 0%, #1a5a7a 50%, #38b6ff 100%);
-  min-height: 100vh;
-  width: 100%;
-}
-.hkMainSection .hkMainDiv h1 {
-  color: #ffffff;
-  font-size: 50px;
-  text-align: center;
-  padding-top: 150px;
+  font-style: italic;
 }
 
-.hkMainSection .hkMainDiv p {
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 20px;
+.hkMainDiv p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: roboto medium;
+  line-height: 1.8;
+  opacity: 0.95;
 }
-.hkMainSection .hkMainDiv a {
-  display: block;
-  width: 120px;
-  margin: 30px auto;
-  padding: 10px 0;
-  text-align: center;
-  background-color: #8bdae7;
-  color: #0d3752;
+
+.hkMainDiv a {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #38b6ff;
+  color: #000000;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+  font-family: roboto bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(56, 182, 255, 0.3);
 }
-.hkMainSection .hkMainDiv a:hover {
-  color: #ffffff;
-  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
-}
-/* end of styling the main section */
 
-/* start of styling the code bases section */
+.hkMainDiv a:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(56, 182, 255, 0.4);
+}
+
+.hkCodeBases .hkContainer {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 100%);
+  padding: 60px 20px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
 .hkCodeBases .hkContainer .hkRow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
-.hkCodeBases .hkContainer {
-  background-color: #000000;
-  padding: 40px 20px;
-  color: #ffffff;
-}
+
 .hkCodeBases .hkContainer .hkRow .hkColOne {
   width: 40%;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 30px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hkCodeBases .hkContainer .hkRow .hkColTwo {
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 15px;
-  text-align: justify;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hkCodeBases .hkContainer .hkRow .hkColOne i {
-  color: #ffffff;
-  font-size: 50px;
+  border-radius: 10px;
+  background: rgba(56, 182, 255, 0.08);
+  border: 1px solid rgba(56, 182, 255, 0.15);
+  transition: all 0.3s ease;
 }
 
-/* here I changed the colors of the icons */
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkReactIcon {
-  color: #61dafb;
+.hkCodeBases .hkContainer .hkRow .hkColOne:hover {
+  background: rgba(56, 182, 255, 0.12);
+  border-color: rgba(56, 182, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(56, 182, 255, 0.15);
 }
+
+.hkCodeBases .hkContainer .hkRow .hkColOne i {
+  font-size: 70px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 15px currentColor;
+}
+
+.hkCodeBases .hkContainer .hkRow .hkColOne:hover i {
+  transform: scale(1.1);
+}
+
+.hkCodeBases .hkContainer .hkRow .hkColOne i#hkReactIcon {
+  color: #38b6ff;
+}
+
 .hkCodeBases .hkContainer .hkRow .hkColOne i#hkHtmlIcon {
   color: #e34f26;
 }
+
 .hkCodeBases .hkContainer .hkRow .hkColOne i#hkCssIcon {
   color: #264de4;
 }
+
 .hkCodeBases .hkContainer .hkRow .hkColOne i#hkJsIcon {
   color: #f0db4f;
 }
+
 .hkCodeBases .hkContainer .hkRow .hkColOne i#hkSassIcon {
   color: #cd6799;
 }
 
-/* class name bg learn style */
+.hkCodeBases .hkContainer .hkRow .hkColTwo {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 30px;
+  text-align: justify;
+}
+
 .hkBgLearn {
-  background-color: #366582;
+  background: linear-gradient(135deg, #0d3752 0%, #1a5a7a 100%);
   margin: 30px;
-  padding: 20px;
+  padding: 40px;
   color: #ffffff;
-  text-align: center;
-  box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
-  -webkit-box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
-  -moz-box-shadow: 15px 16px 47px 9px rgba(86, 150, 202, 0.6);
+  text-align: left;
+  border-radius: 15px;
+  border-left: 4px solid #38b6ff;
+  box-shadow: 0 10px 30px rgba(56, 182, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.hkBgLearn:hover {
+  transform: translateX(8px);
+  border-left-width: 6px;
+  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.25);
+}
+
+.hkBgLearn .hkBgLearnDiv {
+  position: relative;
+  z-index: 1;
 }
 
 .hkBgLearn .hkBgLearnDiv h1 {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 15px;
   font-family: roboto bold;
+  text-shadow: 0 0 10px rgba(56, 182, 255, 0.2);
 }
+
 .hkBgLearn .hkBgLearnDiv p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
   font-family: roboto medium;
+  opacity: 0.9;
+  line-height: 1.6;
 }
+
 .hkBgLearn .hkBgLearnDiv a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #8bdae7;
-  color: #0d3752;
+  padding: 10px 25px;
+  background: #38b6ff;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(56, 182, 255, 0.2);
 }
+
 .hkBgLearn .hkBgLearnDiv a:hover {
-  color: #ffffff;
-  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
+  background: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 182, 255, 0.4);
 }
-/* end of styling the learn style */
 
-
-/* start of styling of cards */
 .hkCards .hkCardContainer .hkCardsRow {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin-top: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 80px;
+  margin: 80px 100px;
   gap: 80px;
 }
 
 .hkCards .hkCardContainer .hkCardsRow .hkCardOne,
 .hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
   flex: 1;
-  padding: 10px;
-}
-/* hover effect for cards */
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-/* end of hover effect for cards */
-
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne {
-  background-color: #000000;
-  border-radius: 10px;
-  color:#ffffff;
-}
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne h5{
-    color:#ffffff;
-    font-family: roboto bold;
-}
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
-  background-color: #000000;
-  border-radius: 10px;
+  padding: 30px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  border-radius: 12px;
   color: #ffffff;
-}
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo h5{
-    color:#ffffff;
-    font-family: roboto bold;
-}
-/* styling of Icons */
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne i#hkHtmlIconCard {
-  color: #e34f26;
-  font-size: 50px;
-}
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo i#hkCssIconCard {
-  color: #264de4;
-  font-size: 50px;
+  border: 1px solid rgba(56, 182, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
-/* giving hover efects to the button in the cards */
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne:hover,
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 182, 255, 0.4);
+  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.2);
+}
+
+.hkCards .hkCardContainer .hkCardsRow .hkCardOne h5,
+.hkCards .hkCardContainer .hkCardsRow .hkCardTwo h5 {
+  color: #38b6ff;
+  font-family: roboto bold;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.hkCards .hkCardContainer .hkCardsRow i#hkHtmlIconCard {
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #e34f26;
+}
+
+.hkCards .hkCardContainer .hkCardsRow i#hkCssIconCard {
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #264de4;
+}
 
 .hkCards .hkCardContainer .hkCardsRow a {
-    text-decoration: none;
-   background-color:#8bdae7;
-   color:#000000;
-   font-family: roboto bold;
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  background: #38b6ff;
+  color: #000000;
+  font-family: roboto bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(56, 182, 255, 0.2);
+  margin-top: 15px;
 }
+
 .hkCards .hkCardContainer .hkCardsRow a:hover {
-    color:#ffffff;
+  background: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(56, 182, 255, 0.35);
 }
-/* end of styling the cards */
 
 .hkContact {
-  background-color: #0d3752;
-  padding: 40px 20px;
-  text-align: center;
+  background: linear-gradient(135deg, #0d3752 0%, #1a5a7a 100%);
+  padding: 80px 30px;
   color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* styling the fourth section */
+
+.hkContact .ConatctDiv {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
 .hkContact .ConatctDiv h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 42px;
+  margin-bottom: 25px;
   font-family: roboto bold;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
 .hkContact .ConatctDiv p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
   font-family: roboto medium;
+  line-height: 1.8;
+  opacity: 0.95;
 }
+
 .hkContact .ConatctDiv a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #8bdae7;
-  color: #0d3752;
+  padding: 15px 40px;
+  background: #38b6ff;
+  color: #000000;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+  font-family: roboto bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(56, 182, 255, 0.25);
 }
-.hkContact .ConatctDiv a:hover {
-  color: #ffffff;
-  box-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
-}
-/* end of styling the fourth section */
 
+.hkContact .ConatctDiv a:hover {
+  background: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(56, 182, 255, 0.4);
+}
 /* footer styling */
 .hkFooter{
     background-color: #000000;
