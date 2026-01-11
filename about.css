@@ -370,6 +370,57 @@ body {
   box-shadow: 0 0 50px rgba(56, 182, 255, 0.8);
   transform: scale(1.05);
 }
+
+/* Responsive Design for 768px and below */
+@media (max-width: 768px) {
+  .hkPractice .hkContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .hkLearnByDoing .hkLearnContent {
+    flex-direction: column;
+  }
+
+  .hkLearnByDoing .hkLearnText {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hkRobot .hkLearnContent {
+    flex-direction: column;
+  }
+
+  .hkRobot .hkLearnText {
+    margin-top: 30px;
+  }
+
+  .hkCalendar .hkLearnContent {
+    flex-direction: column;
+  }
+
+  .hkCalendar .hkLearnText {
+    margin-bottom: 30px;
+  }
+
+  .hkLearnByDoing h2,
+  .hkRobot h2,
+  .hkCalendar h2 {
+    font-size: 24px;
+  }
+
+  .hkLearnByDoing p,
+  .hkRobot p,
+  .hkCalendar p {
+    font-size: 16px;
+  }
+
+  .hkLearnByDoing video,
+  .hkRobot video,
+  .hkCalendar video {
+    width: 100%;
+  }
+}
+
 /* footer styling */
 .hkFooter{
     background-color: #000000;
@@ -405,11 +456,4 @@ body {
     color:#ffffff;
     text-shadow: 0 0 20px #4acbdf, 0 0 30px #4acbdf;
  }
-@media (max-width: 768px) {
-    .card {
-        display: block; /* Stack cards vertically */
-        width: 100%; /* Full width for each card */
-        margin-bottom: 20px; /* Space between cards */
-    }
-}
 
