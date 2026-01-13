@@ -130,7 +130,7 @@ body {
 
 /* CEO section style */
 .hkCeoContainer {
-    background-color: var(--secondary);
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d3752 10%, #1a1a1a 100%);
     padding: 60px 20px;
     
 }

@@ -128,9 +128,10 @@ body {
 /* end oof header styling */
 
 /* FAQ Section */
+.faq {
+  background-color: #000000;
+}
 section.faq {
-    max-width: 900px;
-    margin: 60px auto;
     padding: 40px 20px;
     color: var(--third);
 }

@@ -130,7 +130,7 @@ body {
 /* testimonials section */
 .testimonials {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #0d3752 0%, #1a4d6d 100%);
+    background-color: #000000;
     text-align: center;
 }
 
