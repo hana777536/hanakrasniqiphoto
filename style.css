@@ -464,23 +464,104 @@ body {
 /* end of footer styling */
 
 /* responsive design for smaller screens */
+/* responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
-    width: fit-content;
+    width: 100%;
   }
+
   header.hkHeader {
     position: static !important;
     top: auto !important;
     width: 100%;
   }
-  header.hkHeader .hkMainNav ul {
-    flex-direction: column;
-    background: #000000;
-    top: 70px;
-    left: 0;
-    width: 100%;
+
+  header.hkHeader .navbar {
+    flex-wrap: wrap;
   }
+
+  header.hkHeader .navbar-brand img {
+    width: 120px;
+    height: 45px;
+  }
+
+  header.hkHeader .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  header.hkHeader .nav-item .nav-link {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(56, 182, 255, 0.1);
+  }
+
+  /* Main Section */
+  .hkMainSection {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .hkMainDiv h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .hkMainDiv p {
+    font-size: 16px;
+  }
+
+  /* Code Bases Section */
+  .hkCodeBases .hkContainer .hkRow {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hkCodeBases .hkContainer .hkRow .hkColOne,
+  .hkCodeBases .hkContainer .hkRow .hkColTwo {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  /* Cards Section */
+  .hkCards .hkCardContainer .hkCardsRow {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hkCards .hkCardContainer .hkCardsRow .hkCardOne,
+  .hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
+    flex: 1;
+    width: 100%;
+    
+  }
+
+  /* Contact Section */
+  .hkContact {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .hkContact .ConatctDiv h2 {
+    font-size: 28px;
+  }
+
+  .hkContact .ConatctDiv p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .hkFooter ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hkFooter ul li a {
+    font-size: 12px;
+  }
+
   .hkNavList {
     display: flex;
     flex-direction: column;
@@ -491,8 +572,9 @@ body {
     top: 70px;
     left: 0;
   }
+
   .hkNavList li a {
     color: #ffffff;
     padding: 10px 0;
-  } 
+  }
 }
