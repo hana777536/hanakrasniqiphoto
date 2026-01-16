@@ -63,9 +63,9 @@ body {
 
 .hkHeader {
   background-color: #000000;
-  box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  /* box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
   -webkit-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
-  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44);
+  -moz-box-shadow: 24px 19px 20px 6px rgba(86, 150, 202, 0.44); */
   position: sticky;
   z-index: 1000;
   top: 0;
@@ -126,100 +126,65 @@ body {
   color: #38b6ff;
 }
 /* end oof header styling */
-
-/* Gallery styling */
-.hkGallery {
+/* gallery styling */
+.mainGallery {
   padding: 60px 20px;
-  background-color: #000000;
-}
-
-.hkPhotos {
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-.gallery-title {
-  font-family: roboto bold;
-  font-size: 48px;
-  color: #38b6ff;
-  margin-bottom: 10px;
-  text-shadow: 0 0 20px rgba(56, 182, 255, 0.5);
-}
-
-.gallery-subtitle {
-  font-family: roboto light;
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-}
-
-#carouselExample {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 40px rgba(56, 182, 255, 0.3);
-}
-
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-
-.hkGalleryGrid {
-  padding: 40px 0;
-}
-
-.gallery-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  height: 300px;
-  cursor: pointer;
-  box-shadow: 0 0 25px rgba(56, 182, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(56, 182, 255, 0.5);
-}
-
-.gallery-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.gallery-card:hover img {
-  transform: scale(1.1);
-}
-
-.gallery-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(13, 55, 82, 0.8), rgba(56, 182, 255, 0.3));
+  background: linear-gradient(135deg, #000000 0%, #1a4d6d 100%);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
 }
 
-.gallery-card:hover .gallery-overlay {
-  opacity: 1;
+.mainGallery .container {
+  max-width: 1000px;
+  width: 100%;
 }
 
-.gallery-overlay h3 {
+.mainGallery .card {
+  border: 2px solid #38b6ff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(56, 182, 255, 0.3), 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: #000000;
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.mainGallery video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mainGallery .card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.mainGallery .card-title {
   font-family: roboto bold;
-  font-size: 24px;
+  font-size: 28px;
   color: #38b6ff;
-  text-shadow: 0 0 15px #38b6ff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(56, 182, 255, 0.5);
 }
 
+.mainGallery .card-text {
+  font-family: roboto regular;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+.mainGallery .card-text small {
+  color: #80aab0;
+  font-size: 12px;
+}
 /* footer styling */
 .hkFooter{
     background-color: #000000;
