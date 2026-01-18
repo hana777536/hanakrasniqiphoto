@@ -118,314 +118,245 @@ body {
 }
 
 /* end of header styling */
-
-.hkMainSection {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0d3752 50%, #1a1a1a 100%);
-  padding: 120px 30px;
-  text-align: center;
+/* home section style */
+.hkHome {
+  background-color: #000000;
   color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  min-height: 600px;
+  padding: 50px 0;
+}
+
+.hkContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkRow {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.hkMainDiv {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-}
-
-.hkMainDiv h1 {
-  font-size: 56px;
-  margin-bottom: 25px;
-  font-family: roboto bold;
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-
-.hkMainDiv h1 em {
-  color: #38b6ff;
-  font-style: italic;
-}
-
-.hkMainDiv p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  font-family: roboto medium;
-  line-height: 1.8;
-  opacity: 0.95;
-}
-
-.hkMainDiv a {
-  display: inline-block;
-  padding: 15px 40px;
-  background: #38b6ff;
-  color: #000000;
-  text-decoration: none;
-  font-family: roboto bold;
-  font-size: 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(56, 182, 255, 0.3);
-}
-
-.hkMainDiv a:hover {
-  background: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(56, 182, 255, 0.4);
-}
-
-.hkCodeBases .hkContainer {
-  background-color: #000000;
-  padding: 60px 20px;
-  color: #ffffff;
-  position: relative;
-  overflow: hidden;
-}
-
-.hkCodeBases .hkContainer .hkRow {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
 }
 
-.hkCodeBases .hkContainer .hkRow .hkColOne {
-  width: 40%;
-  margin-bottom: 20px;
-  padding: 30px;
-  text-align: center;
-  border-radius: 10px;
-  background: rgba(56, 182, 255, 0.08);
-  border: 1px solid rgba(56, 182, 255, 0.15);
-  transition: all 0.3s ease;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne:hover {
-  background: rgba(56, 182, 255, 0.12);
-  border-color: rgba(56, 182, 255, 0.3);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(56, 182, 255, 0.15);
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i {
-  font-size: 70px;
-  transition: all 0.3s ease;
-  text-shadow: 0 0 15px currentColor;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne:hover i {
-  transform: scale(1.1);
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkReactIcon {
-  color: #38b6ff;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkHtmlIcon {
-  color: #e34f26;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkCssIcon {
-  color: #264de4;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkJsIcon {
-  color: #f0db4f;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColOne i#hkSassIcon {
-  color: #cd6799;
-}
-
-.hkCodeBases .hkContainer .hkRow .hkColTwo {
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 30px;
-  text-align: justify;
-}
-
-.hkBgLearn {
-  background-color: #000000;
-  padding: 40px;
-  color: #ffffff;
-  text-align: left;
-  box-shadow: 0 10px 30px rgba(56, 182, 255, 0.15);
-  overflow: hidden;
-}
-
-.hkBgLearn:hover {
-  
-  
-  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.25);
-}
-
-.hkBgLearn .hkBgLearnDiv {
-  position: relative;
-  z-index: 1;
-}
-
-.hkBgLearn .hkBgLearnDiv h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  font-family: roboto bold;
-  text-shadow: 0 0 10px rgba(56, 182, 255, 0.2);
-}
-
-.hkBgLearn .hkBgLearnDiv p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-family: roboto medium;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.hkBgLearn .hkBgLearnDiv a {
-  display: inline-block;
-  padding: 10px 25px;
-  background: #38b6ff;
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(56, 182, 255, 0.2);
-}
-
-.hkBgLearn .hkBgLearnDiv a:hover {
-  background: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(56, 182, 255, 0.4);
-}
-
-.hkCards .hkCardContainer .hkCardsRow {
-  background-color: #000000;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  gap: 80px;
-}
-
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne,
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
+.hkColOne {
   flex: 1;
-  padding: 30px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #000000;
-  border-radius: 12px;
-  color: #ffffff;
-  border: 1px solid rgba(56, 182, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne:hover,
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo:hover {
-  transform: translateY(-8px);
-  border-color: rgba(56, 182, 255, 0.4);
-  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.2);
-}
-
-.hkCards .hkCardContainer .hkCardsRow .hkCardOne h5,
-.hkCards .hkCardContainer .hkCardsRow .hkCardTwo h5 {
-  color: #38b6ff;
-  font-family: roboto bold;
-  font-size: 20px;
-  margin: 15px 0;
-}
-
-.hkCards .hkCardContainer .hkCardsRow i#hkHtmlIconCard {
-  font-size: 60px;
-  margin-bottom: 15px;
-  color: #e34f26;
-}
-
-.hkCards .hkCardContainer .hkCardsRow i#hkCssIconCard {
-  font-size: 60px;
-  margin-bottom: 15px;
-  color: #264de4;
-}
-
-.hkCards .hkCardContainer .hkCardsRow a {
-  display: inline-block;
-  padding: 10px 25px;
-  text-decoration: none;
-  background: #38b6ff;
-  color: #000000;
-  font-family: roboto bold;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(56, 182, 255, 0.2);
-  margin-top: 15px;
-}
-
-.hkCards .hkCardContainer .hkCardsRow a:hover {
-  background: #ffffff;
-  transform: scale(1.08);
-  box-shadow: 0 0 20px rgba(56, 182, 255, 0.35);
-}
-
-.hkContact {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0d3752 50%, #1a1a1a 100%);
-  padding: 80px 30px;
-  color: #ffffff;
   text-align: center;
+}
+
+.hkColOne img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hkColTwo {
+  flex: 2;
+  padding: 20px;
+}
+
+.hkColTwo h1 {
+  font-family: roboto bold;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hkColTwo p {
+  font-family: roboto regular;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hkColTwo a {
+  font-family: roboto semibold;
+  font-size: 1em;
+  color: #38b6ff;
+  text-decoration: none;
+  border: 2px solid #38b6ff;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hkColTwo a:hover {
+  background-color: #38b6ff;
+  color: #000000;
+}
+
+/* programing languages section styling */
+.hkPrograming {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.hkPrograming .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkPrograming .hkRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hkPrograming .hkcol {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #38b6ff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hkPrograming .hkcol:hover {
+  transform: scale(1.05);
+}
+
+.hkPrograming .hkcol i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hkPrograming .hkcol h1 {
+  font-family: roboto bold;
+  font-size: 1.5em;
+}
+ /* users section styling */
+.hkUsers {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.hkUsers .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hkUsers .hkRowUsers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.hkUsers .hkCol {
+  flex: 1 1 22%;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0d3752 0%, #1a5a7f 100%);
+  border: 2px solid #38b6ff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hkContact .ConatctDiv {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
+.hkUsers .hkCol::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 182, 255, 0.1);
+  transition: left 0.3s ease;
 }
 
-.hkContact .ConatctDiv h2 {
-  font-size: 42px;
-  margin-bottom: 25px;
+.hkUsers .hkCol:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.4);
+  border-color: #ffffff;
+}
+
+.hkUsers .hkCol:hover::before {
+  left: 100%;
+}
+
+.hkUsers .hkCol i {
+  font-size: 3em;
+  color: #38b6ff;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.hkUsers .hkCol:hover i {
+  color: #ffffff;
+}
+
+.hkUsers .hkCol h1 {
   font-family: roboto bold;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.hkContact .ConatctDiv p {
-  font-size: 16px;
+.hkUsers .hkCol p {
+  font-family: roboto regular;
+  font-size: 0.95em;
+  color: #b0b0b0;
+}
+/* subscription section styling */
+.hkSub {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hkSub h1 {
+  font-family: roboto bold;
+  font-size: 2.5em;
   margin-bottom: 30px;
-  font-family: roboto medium;
-  line-height: 1.8;
-  opacity: 0.95;
 }
 
-.hkContact .ConatctDiv a {
-  display: inline-block;
-  padding: 15px 40px;
-  background: #38b6ff;
-  color: #000000;
-  text-decoration: none;
+.hksubRow {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hkCol {
+  flex: 1 1 30%;
+  background: linear-gradient(135deg, #0d3752, #1a5a7f);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hkCol:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(56, 182, 255, 0.4);
+}
+
+.hkCol h1 {
   font-family: roboto bold;
-  font-size: 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(56, 182, 255, 0.25);
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
-.hkContact .ConatctDiv a:hover {
-  background: #ffffff;
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(56, 182, 255, 0.4);
+.hkCol p {
+  font-family: roboto regular;
+  font-size: 1em;
+  color: #b0b0b0;
+  margin-bottom: 20px;
 }
+
+.btn-primary {
+  background-color: #38b6ff;
+  color: #000000;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #38b6ff;
+}
+
 /* footer styling */
 .hkFooter{
     background-color: #000000;
@@ -463,118 +394,68 @@ body {
  }
 /* end of footer styling */
 
-
-/* responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-  body {
+  body{
     overflow-x: hidden;
-    width: 100%;
+    width: fit-content;
   }
-
   header.hkHeader {
     position: static !important;
     top: auto !important;
     width: 100%;
   }
-
-  header.hkHeader .navbar {
-    flex-wrap: wrap;
-  }
-
-  header.hkHeader .navbar-brand img {
-    width: 120px;
-    height: 45px;
-  }
-
-  header.hkHeader .navbar-nav {
+  header.hkHeader .hkMainNav ul {
     flex-direction: column;
+    background: #000000;
+    top: 70px;
+    left: 0;
     width: 100%;
-    gap: 0;
   }
-
-  header.hkHeader .nav-item .nav-link {
-    padding: 12px 15px;
-    border-bottom: 1px solid rgba(56, 182, 255, 0.1);
-  }
-
-  /* Main Section */
-  .hkMainSection {
-    padding: 60px 20px;
-    min-height: auto;
-  }
-
-  .hkMainDiv h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .hkMainDiv p {
-    font-size: 16px;
-  }
-
-  /* Code Bases Section */
-  .hkCodeBases .hkContainer .hkRow {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .hkCodeBases .hkContainer .hkRow .hkColOne,
-  .hkCodeBases .hkContainer .hkRow .hkColTwo {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
-  /* Cards Section */
-  .hkCards .hkCardContainer .hkCardsRow {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .hkCards .hkCardContainer .hkCardsRow .hkCardOne,
-  .hkCards .hkCardContainer .hkCardsRow .hkCardTwo {
-    flex: 1;
-    width: 100%;
-    
-  }
-
-  /* Contact Section */
-  .hkContact {
-    padding: 40px 20px;
-    min-height: auto;
-  }
-
-  .hkContact .ConatctDiv h2 {
-    font-size: 28px;
-  }
-
-  .hkContact .ConatctDiv p {
-    font-size: 14px;
-  }
-
-  /* Footer */
-  .hkFooter ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hkFooter ul li a {
-    font-size: 12px;
-  }
-
   .hkNavList {
     display: flex;
     flex-direction: column;
     background: #000000;
     width: 100%;
     padding: 20px;
-    position: absolute;
+    postion: absolute;
     top: 70px;
     left: 0;
   }
-
   .hkNavList li a {
     color: #ffffff;
     padding: 10px 0;
   }
+  
+}@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    width: fit-content;
+  }
+  header.hkHeader {
+    position: static !important;
+    top: auto !important;
+    width: 100%;
+  }
+  header.hkHeader .hkMainNav ul {
+    flex-direction: column;
+    background: #000000;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+  .hkNavList {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    width: 100%;
+    padding: 20px;
+    postion: absolute;
+    top: 70px;
+    left: 0;
+  }
+  .hkNavList li a {
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
 }

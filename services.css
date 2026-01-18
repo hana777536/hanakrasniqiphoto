@@ -129,39 +129,90 @@ body {
 
 /* Services Section Styling */
 .hkSection {
-  background-image: url(./images/dixhital2222.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.hkSection h1{
-  color: #ffffff;
-  text-shadow: 0 0 20px #4acbdf;
-}
-.sectionMain {
   background-color: #000000;
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
 }
 
-.sectionMain::before {
+.hkSection::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(56, 182, 255, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(56, 182, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(13, 63, 82, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
+.hkAll {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hkServiceContent h2 {
+  color: #38b6ff;
+  font-family: roboto bold;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 30px rgba(56, 182, 255, 0.3);
+}
+
+.hkServiceContent > p {
+  color: #e0e0e0;
+  font-family: roboto regular;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hkServiceList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.hkServiceList li {
+  background: rgba(56, 182, 255, 0.08);
+  border-left: 3px solid #38b6ff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #d0d0d0;
+  font-family: roboto regular;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.hkServiceList li:hover {
+  background: rgba(56, 182, 255, 0.15);
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(56, 182, 255, 0.2);
+}
+
+.hkServiceList li strong {
+  color: #38b6ff;
+  font-family: roboto semibold;
+}
+
+.hkServiceContent > p:last-child {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+
+
 .hkContainerSec {
-  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -172,6 +223,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  background-color: #000000;
 }
 
 .firstSec, .secondSec {
@@ -228,20 +280,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-  .hkRowSec {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .firstSec, .secondSec {
-    padding: 30px;
-  }
-  
-  .firstSec h3, .secondSec h3 {
-    font-size: 20px;
-  }
-}
+
 
 /* footer styling */
 .hkFooter{
@@ -314,16 +353,15 @@ body {
     color: #ffffff;
     padding: 10px 0;
   } 
-  .hkSection{
-    width: 100%;
-
-  } 
-  .sectionMain .hkContainerSec .hkRowSec {
+  .hkRowSec {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
   }
+  .hkSection .hkServiceList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
 }
 
