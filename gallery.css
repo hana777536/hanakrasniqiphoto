@@ -341,27 +341,14 @@ body {
   font-size: 12px;
 }
 /* responsive design for smaller screens */
-@media (max-width: 768px) {
-  .hkGallery .hkrow1,
-  .hkGallery .hkrow2 {
-    grid-template-columns: 1fr;
-  }
-  
-  .hkGallery h1 {
-    font-size: 28px;
-  }
-}
+
 
 @media screen and (max-width: 768px) {
   body{
     overflow-x: hidden;
     width: fit-content;
   }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
+
   header.hkHeader .hkMainNav ul {
     flex-direction: column;
     background: #000000;

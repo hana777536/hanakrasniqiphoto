@@ -241,11 +241,7 @@ body {
     overflow-x: hidden;
     width: fit-content;
   }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
+ 
   header.hkHeader .hkMainNav ul {
     flex-direction: column;
     background: #000000;

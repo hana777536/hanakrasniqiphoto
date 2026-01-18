@@ -214,11 +214,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .secondSection {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 /* footer styling */
 .hkFooter{
@@ -263,11 +259,7 @@ body {
     overflow-x: hidden;
     width: fit-content;
   }
-  header.hkHeader {
-    position: static !important;
-    top: auto !important;
-    width: 100%;
-  }
+ 
   header.hkHeader .hkMainNav ul {
     flex-direction: column;
     background: #000000;
@@ -292,4 +284,7 @@ body {
  main {
   flex-direction: column;
 }
+.secondSection {
+    grid-template-columns: 1fr;
+  }
 }
